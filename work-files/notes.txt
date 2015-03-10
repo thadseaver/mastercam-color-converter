@@ -1,0 +1,15 @@
+Possible color picker to integrate:
+https://bgrins.github.io/spectrum/
+
+
+
+Emmett snippets:
+ul>li#*256>a[href=#]
+
+add better error checking on input field
+"Copied!" confirmation
+body background image
+spruce up the header
+border radius to divs
+change foo in .js
+add better comments
