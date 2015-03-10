@@ -3,6 +3,7 @@
 /* Thad Seaver
 Mastercam Color Converter - Feb 2015
 Converts Mastercam color numbers to hex values to be used with the new Mastercam color picker in Verify. */
+/* Credits: Grid background from www.subtlepatterns.com */
 
 html {
 	height: 100%;
