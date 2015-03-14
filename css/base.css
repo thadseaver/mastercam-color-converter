@@ -84,11 +84,11 @@ header h1 {
 }
 
 form > input {
-	width: 25px;
+	width: 30px;
 }
 
 button#convert {
-	margin: 0 0 0 10px;
+	float: right;
 	font-size: 1em;
 }
 
@@ -104,7 +104,7 @@ button#convert {
 	position: absolute;
 	top: 155px;
 	left: 180px;
-	width: 110px;
+	width: 115px;
 	background-color: #ffdc74;
 	padding: 5px;
 	border: 1px solid #f27f26;

@@ -3,792 +3,801 @@ $(function () {
 	$('#convert').on('click', function(e){
 	
 		e.preventDefault();
+
+		// Get number entered and return an integer
 		var numEntered = $('#mc-number').val(),
 			validateVal = parseInt(numEntered);
+
+		// Error check entry
 		if (isNaN(validateVal) || (validateVal < 0 || validateVal > 255)){
 			$('#error').addClass('error-enter');
 			} else {
+
+			// Assign hex value to color selected
 			switch (numEntered) {
 				case "0":
-					var foo = "000000";
+					var answer = "#000000";
 					break;
 				case "1":
-					var foo = "000080";
+					var answer = "#000080";
 					break;
 				case "2":
-					var foo = "008000";
+					var answer = "#008000";
 					break;
 				case "3":
-					var foo = "00c0c0";
+					var answer = "#00c0c0";
 					break;
 				case "4":
-					var foo = "800000";
+					var answer = "#800000";
 					break;
 				case "5":
-					var foo = "800080";
+					var answer = "#800080";
 					break;
 				case "6":
-					var foo = "804200";
+					var answer = "#804200";
 					break;
 				case "7":
-					var foo = "c0c0c0";
+					var answer = "#c0c0c0";
 					break;
 				case "8":
-					var foo = "808080";
+					var answer = "#808080";
 					break;
 				case "9":
-					var foo = "0000ff";
+					var answer = "#0000ff";
 					break;
 				case "10":
-					var foo = "00ff00";
+					var answer = "#00ff00";
 					break;
 				case "11":
-					var foo = "00ffff";
+					var answer = "#00ffff";
 					break;
 				case "12":
-					var foo = "ff0000";
+					var answer = "##ff0000";
 					break;
 				case "13":
-					var foo = "ff00ff";
+					var answer = "#ff00ff";
 					break;
 				case "14":
-					var foo = "ffff00";
+					var answer = "#ffff00";
 					break;
 				case "15":
-					var foo = "ffffff";
+					var answer = "#ffffff";
 					break;
 				case "16":
-					var foo = "ffffcc";
+					var answer = "#ffffcc";
 					break;
 				case "17":
-					var foo = "ffff99";
+					var answer = "#ffff99";
 					break;
 				case "18":
-					var foo = "ffff80";
+					var answer = "#ffff80";
 					break;
 				case "19":
-					var foo = "ffff66";
+					var answer = "#ffff66";
 					break;
 				case "20":
-					var foo = "ffff33";
+					var answer = "#ffff33";
 					break;
 				case "21":
-					var foo = "ccffff";
+					var answer = "#ccffff";
 					break;
 				case "22":
-					var foo = "ccffcc";
+					var answer = "#ccffcc";
 					break;
 				case "23":
-					var foo = "ccff99";
+					var answer = "#ccff99";
 					break;
 				case "24":
-					var foo = "ccff66";
+					var answer = "#ccff66";
 					break;
 				case "25":
-					var foo = "ccff33";
+					var answer = "#ccff33";
 					break;
 				case "26":
-					var foo = "ccff00";
+					var answer = "#ccff00";
 					break;
 				case "27":
-					var foo = "99ffff";
+					var answer = "#99ffff";
 					break;
 				case "28":
-					var foo = "99ffcc";
+					var answer = "#99ffcc";
 					break;
 				case "29":
-					var foo = "99ff99";
+					var answer = "#99ff99";
 					break;
 				case "30":
-					var foo = "99ff66";
+					var answer = "#99ff66";
 					break;
 				case "31":
-					var foo = "99ff33";
+					var answer = "#99ff33";
 					break;
 				case "32":
-					var foo = "99ff00";
+					var answer = "#99ff00";
 					break;
 				case "33":
-					var foo = "66ffff";
+					var answer = "#66ffff";
 					break;
 				case "34":
-					var foo = "66ffcc";
+					var answer = "#66ffcc";
 					break;
 				case "35":
-					var foo = "66ff99";
+					var answer = "#66ff99";
 					break;
 				case "36":
-					var foo = "66ff66";
+					var answer = "#66ff66";
 					break;
 				case "37":
-					var foo = "66ff33";
+					var answer = "#66ff33";
 					break;
 				case "38":
-					var foo = "66ff00";
+					var answer = "#66ff00";
 					break;
 				case "39":
-					var foo = "33ffff";
+					var answer = "#33ffff";
 					break;
 				case "40":
-					var foo = "33ffcc";
+					var answer = "#33ffcc";
 					break;
 				case "41":
-					var foo = "33ff99";
+					var answer = "#33ff99";
 					break;
 				case "42":
-					var foo = "80ff80";
+					var answer = "#80ff80";
 					break;
 				case "43":
-					var foo = "33ff66";
+					var answer = "#33ff66";
 					break;
 				case "44":
-					var foo = "33ff33";
+					var answer = "#33ff33";
 					break;
 				case "45":
-					var foo = "33ff00";
+					var answer = "#33ff00";
 					break;
 				case "46":
-					var foo = "00ffcc";
+					var answer = "#00ffcc";
 					break;
 				case "47":
-					var foo = "00ff99";
+					var answer = "#00ff99";
 					break;
 				case "48":
-					var foo = "00ff66";
+					var answer = "#00ff66";
 					break;
 				case "49":
-					var foo = "00ff33";
+					var answer = "#00ff33";
 					break;
 				case "50":
-					var foo = "ffccff";
+					var answer = "#ffccff";
 					break;
 				case "51":
-					var foo = "ffcccc";
+					var answer = "#ffcccc";
 					break;
 				case "52":
-					var foo = "ffcc99";
+					var answer = "#ffcc99";
 					break;
 				case "53":
-					var foo = "ffcc66";
+					var answer = "#ffcc66";
 					break;
 				case "54":
-					var foo = "ffcc33";
+					var answer = "#ffcc33";
 					break;
 				case "55":
-					var foo = "ffcc00";
+					var answer = "#ffcc00";
 					break;
 				case "56":
-					var foo = "ccccff";
+					var answer = "#ccccff";
 					break;
 				case "57":
-					var foo = "cccccc";
+					var answer = "#cccccc";
 					break;
 				case "58":
-					var foo = "cccc99";
+					var answer = "#cccc99";
 					break;
 				case "59":
-					var foo = "cccc66";
+					var answer = "#cccc66";
 					break;
 				case "60":
-					var foo = "cccc33";
+					var answer = "#cccc33";
 					break;
 				case "61":
-					var foo = "cccc00";
+					var answer = "#cccc00";
 					break;
 				case "62":
-					var foo = "c0c000";
+					var answer = "#c0c000";
 					break;
 				case "63":
-					var foo = "99ccff";
+					var answer = "#99ccff";
 					break;
 				case "64":
-					var foo = "99cccc";
+					var answer = "#99cccc";
 					break;
 				case "65":
-					var foo = "99cc99";
+					var answer = "#99cc99";
 					break;
 				case "66":
-					var foo = "99cc66";
+					var answer = "#99cc66";
 					break;
 				case "67":
-					var foo = "99cc33";
+					var answer = "#99cc33";
 					break;
 				case "68":
-					var foo = "99cc00";
+					var answer = "#99cc00";
 					break;
 				case "69":
-					var foo = "66ccff";
+					var answer = "#66ccff";
 					break;
 				case "70":
-					var foo = "66cccc";
+					var answer = "#66cccc";
 					break;
 				case "71":
-					var foo = "66cc99";
+					var answer = "#66cc99";
 					break;
 				case "72":
-					var foo = "66cc66";
+					var answer = "#66cc66";
 					break;
 				case "73":
-					var foo = "66cc33";
+					var answer = "#66cc33";
 					break;
 				case "74":
-					var foo = "66cc00";
+					var answer = "#66cc00";
 					break;
 				case "75":
-					var foo = "33ccff";
+					var answer = "#33ccff";
 					break;
 				case "76":
-					var foo = "33cccc";
+					var answer = "#33cccc";
 					break;
 				case "77":
-					var foo = "33cc99";
+					var answer = "#33cc99";
 					break;
 				case "78":
-					var foo = "33cc66";
+					var answer = "#33cc66";
 					break;
 				case "79":
-					var foo = "33cc33";
+					var answer = "#33cc33";
 					break;
 				case "80":
-					var foo = "33cc00";
+					var answer = "#33cc00";
 					break;
 				case "81":
-					var foo = "00ccff";
+					var answer = "#00ccff";
 					break;
 				case "82":
-					var foo = "00cccc";
+					var answer = "#00cccc";
 					break;
 				case "83":
-					var foo = "00cc99";
+					var answer = "#00cc99";
 					break;
 				case "84":
-					var foo = "00cc66";
+					var answer = "#00cc66";
 					break;
 				case "85":
-					var foo = "00cc33";
+					var answer = "#00cc33";
 					break;
 				case "86":
-					var foo = "00cc00";
+					var answer = "#00cc00";
 					break;
 				case "87":
-					var foo = "00c000";
+					var answer = "#00c000";
 					break;
 				case "88":
-					var foo = "00aa00";
+					var answer = "#00aa00";
 					break;
 				case "89":
-					var foo = "ff99ff";
+					var answer = "#ff99ff";
 					break;
 				case "90":
-					var foo = "ff99cc";
+					var answer = "#ff99cc";
 					break;
 				case "91":
-					var foo = "ff9999";
+					var answer = "#ff9999";
 					break;
 				case "92":
-					var foo = "ff9966";
+					var answer = "#ff9966";
 					break;
 				case "93":
-					var foo = "ff9933";
+					var answer = "#ff9933";
 					break;
 				case "94":
-					var foo = "ff9900";
+					var answer = "#ff9900";
 					break;
 				case "95":
-					var foo = "cc99ff";
+					var answer = "#cc99ff";
 					break;
 				case "96":
-					var foo = "cc99cc";
+					var answer = "#cc99cc";
 					break;
 				case "97":
-					var foo = "cc9999";
+					var answer = "#cc9999";
 					break;
 				case "98":
-					var foo = "cc9966";
+					var answer = "#cc9966";
 					break;
 				case "99":
-					var foo = "cc9933";
+					var answer = "#cc9933";
 					break;
 				case "100":
-					var foo = "cc9900";
+					var answer = "#cc9900";
 					break;
 				case "101":
-					var foo = "96a0aa";
+					var answer = "#96a0aa";
 					break;
 				case "102":
-					var foo = "9999cc";
+					var answer = "#9999cc";
 					break;
 				case "103":
-					var foo = "999999";
+					var answer = "#999999";
 					break;
 				case "104":
-					var foo = "999966";
+					var answer = "#999966";
 					break;
 				case "105":
-					var foo = "999933";
+					var answer = "#999933";
 					break;
 				case "106":
-					var foo = "999900";
+					var answer = "#999900";
 					break;
 				case "107":
-					var foo = "808000";
+					var answer = "#808000";
 					break;
 				case "108":
-					var foo = "6699ff";
+					var answer = "#6699ff";
 					break;
 				case "109":
-					var foo = "6699cc";
+					var answer = "#6699cc";
 					break;
 				case "110":
-					var foo = "0080c0";
+					var answer = "#0080c0";
 					break;
 				case "111":
-					var foo = "669999";
+					var answer = "#669999";
 					break;
 				case "112":
-					var foo = "008080";
+					var answer = "#008080";
 					break;
 				case "113":
-					var foo = "669966";
+					var answer = "#669966";
 					break;
 				case "114":
-					var foo = "669933";
+					var answer = "#669933";
 					break;
 				case "115":
-					var foo = "669900";
+					var answer = "#669900";
 					break;
 				case "116":
-					var foo = "3399ff";
+					var answer = "#3399ff";
 					break;
 				case "117":
-					var foo = "3399cc";
+					var answer = "#3399cc";
 					break;
 				case "118":
-					var foo = "339999";
+					var answer = "#339999";
 					break;
 				case "119":
-					var foo = "339966";
+					var answer = "#339966";
 					break;
 				case "120":
-					var foo = "339933";
+					var answer = "#339933";
 					break;
 				case "121":
-					var foo = "339900";
+					var answer = "#339900";
 					break;
 				case "122":
-					var foo = "0099ff";
+					var answer = "#0099ff";
 					break;
 				case "123":
-					var foo = "008040";
+					var answer = "#008040";
 					break;
 				case "124":
-					var foo = "0099cc";
+					var answer = "#0099cc";
 					break;
 				case "125":
-					var foo = "009999";
+					var answer = "#009999";
 					break;
 				case "126":
-					var foo = "009966";
+					var answer = "#009966";
 					break;
 				case "127":
-					var foo = "009933";
+					var answer = "#009933";
 					break;
 				case "128":
-					var foo = "009900";
+					var answer = "#009900";
 					break;
 				case "129":
-					var foo = "ff80ff";
+					var answer = "#ff80ff";
 					break;
 				case "130":
-					var foo = "ff66ff";
+					var answer = "#ff66ff";
 					break;
 				case "131":
-					var foo = "ff80c0";
+					var answer = "#ff80c0";
 					break;
 				case "132":
-					var foo = "ff66cc";
+					var answer = "#ff66cc";
 					break;
 				case "133":
-					var foo = "ff6699";
+					var answer = "#ff6699";
 					break;
 				case "134":
-					var foo = "ff8080";
+					var answer = "#ff8080";
 					break;
 				case "135":
-					var foo = "ff6666";
+					var answer = "#ff6666";
 					break;
 				case "136":
-					var foo = "ff8040";
+					var answer = "#ff8040";
 					break;
 				case "137":
-					var foo = "ff6633";
+					var answer = "#ff6633";
 					break;
 				case "138":
-					var foo = "ff6600";
+					var answer = "#ff6600";
 					break;
 				case "139":
-					var foo = "cc66ff";
+					var answer = "#cc66ff";
 					break;
 				case "140":
-					var foo = "cc66cc";
+					var answer = "#cc66cc";
 					break;
 				case "141":
-					var foo = "cc6699";
+					var answer = "#cc6699";
 					break;
 				case "142":
-					var foo = "cc6666";
+					var answer = "#cc6666";
 					break;
 				case "143":
-					var foo = "cc6633";
+					var answer = "#cc6633";
 					break;
 				case "144":
-					var foo = "cc6600";
+					var answer = "#cc6600";
 					break;
 				case "145":
-					var foo = "9966ff";
+					var answer = "#9966ff";
 					break;
 				case "146":
-					var foo = "9966cc";
+					var answer = "#9966cc";
 					break;
 				case "147":
-					var foo = "996699";
+					var answer = "#996699";
 					break;
 				case "148":
-					var foo = "996666";
+					var answer = "#996666";
 					break;
 				case "149":
-					var foo = "996633";
+					var answer = "#996633";
 					break;
 				case "150":
-					var foo = "996600";
+					var answer = "#996600";
 					break;
 				case "151":
-					var foo = "8080ff";
+					var answer = "#8080ff";
 					break;
 				case "152":
-					var foo = "6666ff";
+					var answer = "#6666ff";
 					break;
 				case "153":
-					var foo = "8080c0";
+					var answer = "#8080c0";
 					break;
 				case "154":
-					var foo = "6666cc";
+					var answer = "#6666cc";
 					break;
 				case "155":
-					var foo = "666699";
+					var answer = "#666699";
 					break;
 				case "156":
-					var foo = "666666";
+					var answer = "#666666";
 					break;
 				case "157":
-					var foo = "666633";
+					var answer = "#666633";
 					break;
 				case "158":
-					var foo = "666600";
+					var answer = "#666600";
 					break;
 				case "159":
-					var foo = "0080ff";
+					var answer = "#0080ff";
 					break;
 				case "160":
-					var foo = "3366ff";
+					var answer = "#3366ff";
 					break;
 				case "161":
-					var foo = "3366cc";
+					var answer = "#3366cc";
 					break;
 				case "162":
-					var foo = "336699";
+					var answer = "#336699";
 					break;
 				case "163":
-					var foo = "336666";
+					var answer = "#336666";
 					break;
 				case "164":
-					var foo = "336633";
+					var answer = "#336633";
 					break;
 				case "165":
-					var foo = "336600";
+					var answer = "#336600";
 					break;
 				case "166":
-					var foo = "0066ff";
+					var answer = "#0066ff";
 					break;
 				case "167":
-					var foo = "0066cc";
+					var answer = "#0066cc";
 					break;
 				case "168":
-					var foo = "006699";
+					var answer = "#006699";
 					break;
 				case "169":
-					var foo = "006666";
+					var answer = "#006666";
 					break;
 				case "170":
-					var foo = "006633";
+					var answer = "#006633";
 					break;
 				case "171":
-					var foo = "006600";
+					var answer = "#006600";
 					break;
 				case "172":
-					var foo = "ff33ff";
+					var answer = "#ff33ff";
 					break;
 				case "173":
-					var foo = "ff33cc";
+					var answer = "#ff33cc";
 					break;
 				case "174":
-					var foo = "ff3399";
+					var answer = "#ff3399";
 					break;
 				case "175":
-					var foo = "ff3366";
+					var answer = "#ff3366";
 					break;
 				case "176":
-					var foo = "ff3333";
+					var answer = "#ff3333";
 					break;
 				case "177":
-					var foo = "ff3300";
+					var answer = "#ff3300";
 					break;
 				case "178":
-					var foo = "cc33ff";
+					var answer = "#cc33ff";
 					break;
 				case "179":
-					var foo = "cc33cc";
+					var answer = "#cc33cc";
 					break;
 				case "180":
-					var foo = "cc3399";
+					var answer = "#cc3399";
 					break;
 				case "181":
-					var foo = "cc3366";
+					var answer = "#cc3366";
 					break;
 				case "182":
-					var foo = "cc3333";
+					var answer = "#cc3333";
 					break;
 				case "183":
-					var foo = "cc3300";
+					var answer = "#cc3300";
 					break;
 				case "184":
-					var foo = "9933ff";
+					var answer = "#9933ff";
 					break;
 				case "185":
-					var foo = "9933cc";
+					var answer = "#9933cc";
 					break;
 				case "186":
-					var foo = "993399";
+					var answer = "#993399";
 					break;
 				case "187":
-					var foo = "993366";
+					var answer = "#993366";
 					break;
 				case "188":
-					var foo = "993333";
+					var answer = "#993333";
 					break;
 				case "189":
-					var foo = "993300";
+					var answer = "#993300";
 					break;
 				case "190":
-					var foo = "6633ff";
+					var answer = "#6633ff";
 					break;
 				case "191":
-					var foo = "6633cc";
+					var answer = "#6633cc";
 					break;
 				case "192":
-					var foo = "663399";
+					var answer = "#663399";
 					break;
 				case "193":
-					var foo = "663366";
+					var answer = "#663366";
 					break;
 				case "194":
-					var foo = "804040";
+					var answer = "#804040";
 					break;
 				case "195":
-					var foo = "663333";
+					var answer = "#663333";
 					break;
 				case "196":
-					var foo = "663300";
+					var answer = "#663300";
 					break;
 				case "197":
-					var foo = "3333ff";
+					var answer = "#3333ff";
 					break;
 				case "198":
-					var foo = "3333cc";
+					var answer = "#3333cc";
 					break;
 				case "199":
-					var foo = "333399";
+					var answer = "#333399";
 					break;
 				case "200":
-					var foo = "333366";
+					var answer = "#333366";
 					break;
 				case "201":
-					var foo = "404040";
+					var answer = "#404040";
 					break;
 				case "202":
-					var foo = "333333";
+					var answer = "#333333";
 					break;
 				case "203":
-					var foo = "404000";
+					var answer = "#404000";
 					break;
 				case "204":
-					var foo = "333300";
+					var answer = "#333300";
 					break;
 				case "205":
-					var foo = "0033ff";
+					var answer = "#0033ff";
 					break;
 				case "206":
-					var foo = "0033cc";
+					var answer = "#0033cc";
 					break;
 				case "207":
-					var foo = "003399";
+					var answer = "#003399";
 					break;
 				case "208":
-					var foo = "004080";
+					var answer = "#004080";
 					break;
 				case "209":
-					var foo = "003366";
+					var answer = "#003366";
 					break;
 				case "210":
-					var foo = "004040";
+					var answer = "#004040";
 					break;
 				case "211":
-					var foo = "003333";
+					var answer = "#003333";
 					break;
 				case "212":
-					var foo = "004000";
+					var answer = "#004000";
 					break;
 				case "213":
-					var foo = "003300";
+					var answer = "#003300";
 					break;
 				case "214":
-					var foo = "ff00cc";
+					var answer = "#ff00cc";
 					break;
 				case "215":
-					var foo = "ff0099";
+					var answer = "#ff0099";
 					break;
 				case "216":
-					var foo = "ff0066";
+					var answer = "#ff0066";
 					break;
 				case "217":
-					var foo = "ff0033";
+					var answer = "#ff0033";
 					break;
 				case "218":
-					var foo = "cc00ff";
+					var answer = "#cc00ff";
 					break;
 				case "219":
-					var foo = "cc00cc";
+					var answer = "#cc00cc";
 					break;
 				case "220":
-					var foo = "c000c0";
+					var answer = "#c000c0";
 					break;
 				case "221":
-					var foo = "cc0099";
+					var answer = "#cc0099";
 					break;
 				case "222":
-					var foo = "cc0066";
+					var answer = "#cc0066";
 					break;
 				case "223":
-					var foo = "cc0033";
+					var answer = "#cc0033";
 					break;
 				case "224":
-					var foo = "cc0000";
+					var answer = "#cc0000";
 					break;
 				case "225":
-					var foo = "c00000";
+					var answer = "#c00000";
 					break;
 				case "226":
-					var foo = "aa0000";
+					var answer = "#aa0000";
 					break;
 				case "227":
-					var foo = "9900ff";
+					var answer = "#9900ff";
 					break;
 				case "228":
-					var foo = "9900cc";
+					var answer = "#9900cc";
 					break;
 				case "229":
-					var foo = "990099";
+					var answer = "#990099";
 					break;
 				case "230":
-					var foo = "990066";
+					var answer = "#990066";
 					break;
 				case "231":
-					var foo = "990033";
+					var answer = "#990033";
 					break;
 				case "232":
-					var foo = "990000";
+					var answer = "#990000";
 					break;
 				case "233":
-					var foo = "6600ff";
+					var answer = "#6600ff";
 					break;
 				case "234":
-					var foo = "8000ff";
+					var answer = "#8000ff";
 					break;
 				case "235":
-					var foo = "6600cc";
+					var answer = "#6600cc";
 					break;
 				case "236":
-					var foo = "660099";
+					var answer = "#660099";
 					break;
 				case "237":
-					var foo = "660066";
+					var answer = "#660066";
 					break;
 				case "238":
-					var foo = "800040";
+					var answer = "#800040";
 					break;
 				case "239":
-					var foo = "660033";
+					var answer = "#660033";
 					break;
 				case "240":
-					var foo = "660000";
+					var answer = "#660000";
 					break;
 				case "241":
-					var foo = "400000";
+					var answer = "#400000";
 					break;
 				case "242":
-					var foo = "3300ff";
+					var answer = "#3300ff";
 					break;
 				case "243":
-					var foo = "3300cc";
+					var answer = "#3300cc";
 					break;
 				case "244":
-					var foo = "330099";
+					var answer = "#330099";
 					break;
 				case "245":
-					var foo = "400080";
+					var answer = "#400080";
 					break;
 				case "246":
-					var foo = "330066";
+					var answer = "#330066";
 					break;
 				case "247":
-					var foo = "400040";
+					var answer = "#400040";
 					break;
 				case "248":
-					var foo = "330033";
+					var answer = "#330033";
 					break;
 				case "249":
-					var foo = "330000";
+					var answer = "#330000";
 					break;
 				case "250":
-					var foo = "0000cc";
+					var answer = "#0000cc";
 					break;
 				case "251":
-					var foo = "0000aa";
+					var answer = "#0000aa";
 					break;
 				case "252":
-					var foo = "000099";
+					var answer = "#000099";
 					break;
 				case "253":
-					var foo = "000066";
+					var answer = "#000066";
 					break;
 				case "254":
-					var foo = "000040";
+					var answer = "#000040";
 					break;
 				case "255":
-					var foo = "000033";
+					var answer = "#000033";
 					break;
 			}
-		$('.hex-answer').html('The hex code for your selected color is #' + '<span id="result">' + foo.toUpperCase() + '</span>' + '.');
+
+		// Write HTML to page based on number selected
+		$('.hex-answer').html('The hex code for your selected color is ' + '<span id="result">' + answer.toUpperCase() + '</span>' + '.');
 		}
 	});
 	
+	// Clear answer and remove error message
 	$('#mc-number').focus(function(){
 		$('.hex-answer').html('Please select a color.');
 		$('#error').removeClass('error-enter');
 	});
 
 
-
+	// Use Spectrum plugin to layout Mastercam color palette
 	$("#custom").spectrum({
     showPaletteOnly: true,
     preferredFormat: "hex",

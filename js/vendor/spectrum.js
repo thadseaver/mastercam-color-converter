@@ -858,11 +858,14 @@
             if (isInput) {
                 boundElement.val(displayColor);
 
-                //Added by Thad
+                // Added by Thad
+                // Clear input field and hide error when selecting from color palette
 				$('#mc-number').val('');
-                var croppedHexCode = displayColor.substring(1);
-                $('.hex-answer').html('The hex code for your selected color is #' + '<span id="result">' + croppedHexCode.toUpperCase() + '</span>' + '.');
-            }
+                $('#error').removeClass('error-enter');
+
+                // Write HTML to page based on number selected
+                $('.hex-answer').html('The hex code for your selected color is ' + '<span id="result">' + displayColor.toUpperCase() + '</span>' + '.');
+            }   // End Thad's edits
 
             if (fireCallback && hasChanged) {
                 callbacks.change(color);
