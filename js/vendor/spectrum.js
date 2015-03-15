@@ -864,7 +864,7 @@
                 $('#error').removeClass('error-enter');
 
                 // Write HTML to page based on number selected
-                $('.hex-answer').html('The hex code for your selected color is ' + '<span id="result">' + displayColor.toUpperCase() + '</span>' + '.');
+                $('.hex-answer').html('The hex code for your selected color is ' + '<br><span id="result">' + displayColor.toUpperCase() + '</span>');
             }   // End Thad's edits
 
             if (fireCallback && hasChanged) {

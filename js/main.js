@@ -8,11 +8,14 @@ $(function () {
 		var numEntered = $('#mc-number').val(),
 			validateVal = parseInt(numEntered);
 
-		// Error check entry
-		if (isNaN(validateVal) || (validateVal < 0 || validateVal > 255)){
+		// Make sure error is hidden
+		$('#error').removeClass('error-enter');
+
+		// Error check entered number
+		var chk = /^([01]?[0-9]?[0-9]|2[0-4][0-9]|25[0-5])$/;
+		if (numEntered.search(chk)==-1) {
 			$('#error').addClass('error-enter');
 			} else {
-
 			// Assign hex value to color selected
 			switch (numEntered) {
 				case "0":
@@ -52,7 +55,7 @@ $(function () {
 					var answer = "#00ffff";
 					break;
 				case "12":
-					var answer = "##ff0000";
+					var answer = "#ff0000";
 					break;
 				case "13":
 					var answer = "#ff00ff";
@@ -786,7 +789,7 @@ $(function () {
 			}
 
 		// Write HTML to page based on number selected
-		$('.hex-answer').html('The hex code for your selected color is ' + '<span id="result">' + answer.toUpperCase() + '</span>' + '.');
+		$('.hex-answer').html('The hex code for your selected color is ' + '<br> <span id="result">' + answer.toUpperCase() + '</span>');
 		}
 	});
 	
