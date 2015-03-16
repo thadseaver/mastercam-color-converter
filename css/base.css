@@ -24,6 +24,9 @@ header {
 	text-align: center;
 	line-height: 80px;	
 	border-bottom: 2px solid #0080C0;
+	-moz-box-shadow: inset #0080C0 0 3px 81px -26px;
+	-webkit-box-shadow: inset #0080C0 0 3px 81px -26px;
+	box-shadow: inset #0080C0 0 3px 81px -26px;
 }
 
 header h1 {
@@ -42,6 +45,7 @@ header h1 {
 
 .cam {
 	color: #9b232c;
+	margin-right: 10px;
 }
 
 #wrapper {
@@ -170,6 +174,9 @@ footer {
 	margin: 0 auto;
 	background: url(../images/bg-footer.jpg) no-repeat;
 	border-top: 2px solid #0080C0;
+	-moz-box-shadow: inset #0080C0 0 5px 25px -12px;
+	-webkit-box-shadow: inset #0080C0 0 5px 25px -12px;
+	box-shadow: inset #0080C0 0 5px 25px -12px;
 }
 
 footer p {
