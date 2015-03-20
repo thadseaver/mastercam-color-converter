@@ -9,7 +9,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: Sans-Serif;
-	background: #000 url(../images/bg-body.png) repeat-y;
+	background: #000 url(../images/bg-body.jpg) center repeat-y;
 }
 
 #wrapper, header {
