@@ -10,6 +10,7 @@ body {
 	margin: 0;
 	font-family: Sans-Serif;
 	background: #000 url(../images/bg-body.jpg) center repeat-y;
+	background-size: 100%;
 }
 
 #wrapper, header {
