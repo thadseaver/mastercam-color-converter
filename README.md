@@ -17,7 +17,7 @@ When Mastercam X7 was released, it introduced a new verify and backplot toolpath
 ![](images/new-color-picker.png)
 
 
-For those of us who have been using Mastercam for a while, we have colors that we like to use for certain things. Personally, I like my stock color to be #2 dark green, my finish color to be #10 green, and my toolpath violation color to be #12 red, to name just a few. I created this web app so I can convert my well established Mastercam number colors to hex values for use in the new toolpath simulator.
+For those of us who have been using Mastercam for a while, we have colors that we like to use for certain things. Personally, I like my stock color to be #2 dark green, my finish color to be #10 green, and my toolpath violation color to be #12 red, to name just a few. I created this web app so I can convert my well-established Mastercam number colors to hex values for use in the new toolpath simulator.
 
 ## Instructions ##
 
