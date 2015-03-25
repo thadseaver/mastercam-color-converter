@@ -9,24 +9,25 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: Sans-Serif;
-	background: #000 url(../images/bg-body.jpg) center repeat-y;
-	background-size: 100%;
+	background-color: #000;
 }
 
-#wrapper, header {
+#page-wrap, header, footer {
+	width: 960px;
+}
+
+#page-wrap {
 	position: relative;
 	margin: 0 auto;
+	box-shadow: 0 0 150px 10px #ebebeb;
 }
 
 header {
 	height: 80px;
-	width: 960px;
 	background-color: #555;
 	text-align: center;
 	line-height: 80px;	
 	border-bottom: 2px solid #0080C0;
-	-moz-box-shadow: inset #0080C0 0 3px 81px -26px;
-	-webkit-box-shadow: inset #0080C0 0 3px 81px -26px;
 	box-shadow: inset #0080C0 0 3px 81px -26px;
 }
 
@@ -49,10 +50,10 @@ header h1 {
 	margin-right: 10px;
 }
 
-#wrapper {
+#content-wrap {
+	position: relative;
 	width: 900px;
 	background: url(../images/bg-content.png) repeat;
-	background-color: #ccc;
 	padding: 30px;
 }
 
@@ -170,7 +171,6 @@ button#copy {
 }
 
 footer {
-	width: 960px;
 	height: 30px;
 	margin: 0 auto;
 	background: url(../images/bg-footer.jpg) no-repeat;
