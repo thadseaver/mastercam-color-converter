@@ -21,6 +21,6 @@ For those of us who have been using Mastercam for a while, we have colors that w
 
 ## Instructions ##
 
-If you know the color number, enter it in the input field. Maybe you don't remember the number. Maybe you just know it by its location in the Mastercam color palette (e.g. The last green tile about a third of the way down.) I have recreated the Mastercam color palette so you can click on any color to get its hex code. Once the hex code is displayed, copy the code to the clipboard so you can paste it into Mastercam.
+If you know the color number, enter it in the input field. Maybe you don't remember the number. Maybe you just know it by its location in the Mastercam color palette (e.g. The last green tile about a third of the way down.) I have recreated the Mastercam color palette (using [Spectrum](https://github.com/bgrins/spectrum "Spectrum")) so you can click on any color to get its hex code. Once the hex code is displayed, copy the code to the clipboard so you can paste it into Mastercam.
 
-This web app is not mobile friendly because it is something that would only be used when using Mastercam on a desktop workstation or a laptop. The "copy to clipboard" functionality uses Flash, which is increasingly difficult to find on mobile devices.
+This web app is not mobile friendly because it is something that would only be used when using Mastercam on a desktop workstation or a laptop. The "copy to clipboard" functionality ([ZeroClipboard](https://github.com/zeroclipboard/zeroclipboard "ZeroClipboard")) uses Flash, which is increasingly difficult to find on mobile devices.
