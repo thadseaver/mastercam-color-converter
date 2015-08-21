@@ -7,7 +7,7 @@ Converts Mastercam color numbers to hex values for use in the new verify and bac
 
 [Mastercam](http://www.mastercam.com/en-us/ "Mastercam") is a CAD/CAM package that creates toolpaths to drive your CNC machines. The color picker in Mastercam consists of 256 colors that are identified by a number. Mastercam's color numbers are 0-255 and are arranged in order, from left to right, top to bottom. For example, 0 is black and 12 is red.
 
-### Old color picker ###
+### Old Color Picker ###
 ![](images/mc-color-picker.png)
 
 
