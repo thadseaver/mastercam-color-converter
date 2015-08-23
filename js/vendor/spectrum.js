@@ -863,8 +863,9 @@
 				$('#mc-number').val('');
                 $('#error').removeClass('error-enter');
 
-                // Write HTML to page based on number selected
+                // Write HTML to page based on number selected and enable copy button
                 $('.hex-answer').html('The hex code for your selected color is ' + '<br><span id="result">' + displayColor.toUpperCase() + '</span>');
+                $('#copy').prop('disabled', false);
             }   // End Thad's edits
 
             if (fireCallback && hasChanged) {

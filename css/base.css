@@ -113,6 +113,13 @@ button#copy {
 	font-weight: bold;
 }
 
+#confirm {
+	position: absolute;
+	top: 97px;
+	left: 250px;
+	display: none;
+}
+
 #error {
 	position: absolute;
 	top: 155px;
